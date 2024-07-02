@@ -2,8 +2,7 @@ import type { MoviePagination, QueryParams } from '@/models';
 import { queryParamsToSearchParams, SortParam } from '@/models';
 import { useLoaderData, Outlet, NavLink } from '@remix-run/react';
 
-// const API_URL = process.env.API_URL as string;
-const API_URL = 'https://movie-magic-rest-api-221d9114e329.herokuapp.com';
+const API_URL = process.env.API_URL as string;
 
 export async function loader() {
   const top10QueryParams: QueryParams = {
