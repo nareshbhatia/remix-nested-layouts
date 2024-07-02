@@ -2,7 +2,7 @@
 
 ![Screenshot](assets/screenshot.png)
 
-Live demo: https://remix-nested-layouts.vercel.app/
+Live demo: https://remix-nested-layouts-coral.vercel.app/
 
 This repository shows how to nest layouts using Remix.
 
