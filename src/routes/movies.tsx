@@ -2,9 +2,8 @@ import type { MoviePagination, QueryParams } from '@/models';
 import { queryParamsToSearchParams, SortParam } from '@/models';
 import { useLoaderData, Outlet, NavLink } from '@remix-run/react';
 
-const API_URL = process.env.API_URL as string;
-
 export async function loader() {
+  const API_URL = process.env.API_URL as string;
   const top10QueryParams: QueryParams = {
     sort: SortParam.RANK_ASC,
     pageSpec: {

@@ -9,9 +9,8 @@ import type { Movie } from '@/models';
 import type { LoaderFunctionArgs } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
-const API_URL = process.env.API_URL as string;
-
 export async function loader({ params }: LoaderFunctionArgs) {
+  const API_URL = process.env.API_URL as string;
   return fetch(`${API_URL}/movies/${params.movieId}`);
 }
 
